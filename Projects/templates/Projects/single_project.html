@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if Project %}
+<hr>
+<h1 style="text-align: center;">{{ Project.title }}</h1>
+<hr>
+{% for tag in Project.tags.all %}
+<span style="border: 1px solid grey;">{{ tags }}</span>
+{% endfor %}
+<br>
+<p>{{ Project.description }}</p>
+{% else %}
+<h1>Project not found</h1>
+{% endif %}
+{% endblock content %}

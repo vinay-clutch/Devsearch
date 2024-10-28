@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Project Form</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{field.label}}
+    {{ form.as_p }} 
+    <button type="submit">Create Project</button>
+    <input type="submit">
+</form>
+
+{% endblock%}

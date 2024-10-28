@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+    <head>
+        <title>DEVSEARCH</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css'%}">
+    </head>
+    <body>
+        {% include 'navbar.html'%}
+        {% block content%}
+        {%endblock content%}
+    </body>
+</html>
